@@ -1,0 +1,15 @@
+{
+  "name": "sc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "PGUSER=leesh PGHOST=localhost PGPASSWORD=leesh PGDATABASE=sc PGPORT=5432 node ./app/migration/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.4.3"
+  }
+}
