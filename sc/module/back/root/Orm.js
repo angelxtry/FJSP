@@ -29,13 +29,13 @@ require('../../share/root/Functional')
   }
 
   function SELECT(strs, ...vals) {
-    return `SELECT $(strs[0])`;
+    return `SELECT ${strs[0]}`;
   }
   function FROM(strs, ...vals) {
-    return `FROM $(strs[0])`;
+    return `FROM ${strs[0]}`;
   }
   function WHERE(strs, ...vals) {
-    return `WHERE $(strs[0])`;
+    return `WHERE ${strs[0]}`;
   }
   Root.Orm = {
     connect, 

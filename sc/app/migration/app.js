@@ -6,7 +6,9 @@ console.log('마이그레이션!');
   const { SELECT, FROM, WHERE } = Orm;
   const { query } = await Orm.connect();
   const res = await query(
-    SELECT `*`, FROM `pg_tables`, WHERE `schemaname = 'public' and tablename = 'migrations'`
+    SELECT `*`,
+    FROM `pg_tables`,
+    WHERE `schemaname = 'public' and tablename = 'migrations'`
   );
   console.log(res);
 }) ();
